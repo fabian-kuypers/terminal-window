@@ -1,0 +1,38 @@
+<! DOCTYP html>
+<html>
+<header>
+
+<style>
+html, main{
+  background-color:#010;
+}
+
+#input{
+  text-shadow:.5px .5px 2px #0f0;
+  filter:blur(.7px);
+  font-size:50px;
+  font-family: monospace;
+  color:#9f9;
+  display:flex;
+}
+#prompt{
+  width:25px;
+  height:50px;
+  background-color:#9f9;
+  animation-name:blink;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  animation-timing-function:steps(1);
+}
+@keyframes blink{
+  50%{
+    opacity:.0;
+  }
+}
+</style>
+
+</header>
+<body>
+<div id='input'><div id='prompt'></div></div>
+</body>
+</html>
